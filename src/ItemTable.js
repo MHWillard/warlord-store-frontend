@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function ItemTable() {
-    const [item, setItem] = useState([]);
+    //const [item, setItem] = useState([]);
     const [allItem, setAllItem] = useState([]);
 
     useEffect(() => {

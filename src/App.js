@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 import ItemTable from './ItemTable';
-import Banner from './Banner';
+//import Banner from './Banner';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 function App() {
 

@@ -8,8 +8,7 @@ function ItemTable() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get('https://localhost:7053/api/Items/allitems/'); //.net backend
-            console.log(response.data);
+            const response = await axios.get('https://weaponstoreapi.azurewebsites.net/api/allitems/'); //.net backend
             setAllItem(response.data);
           } catch (error) {
             console.error('Error fetching data:', error);
@@ -21,7 +20,6 @@ function ItemTable() {
 
       const itemTable = allItem.map(item =>
         <tr key={item.id}>
-          <th>{item.id}</th>
           <th>{item.name}</th>
           <th>{item.category}</th> 
           <th>{item.damage}</th>
@@ -34,7 +32,6 @@ function ItemTable() {
           <table class="table is-fullwidth">
             <thead>
               <tr>
-                <th>ID</th>
                 <th>Name</th>
                 <th>Category</th>
                 <th>Damage</th>

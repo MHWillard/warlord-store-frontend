@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function ItemTable() {
     //const [item, setItem] = useState([]);
-    //const [allItem, setAllItem] = useState([]);
+    const [allItem, setAllItem] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
